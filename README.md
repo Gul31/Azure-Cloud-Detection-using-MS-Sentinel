@@ -32,7 +32,7 @@ This document demonstrates through images and brief descriptions, steps undertak
  - Renamed default subscription name to (Sub-AZ-CD-P1)
  - Created and deployed Resource Group (RG-AZ-CD-P1), Virtual Machine Windows 10 Pro (VM-AZ-CD-P1) - Allowed all inbound Remote Desktop Protocol (RDP) connection
  - Noticed default deployment of Network Security Group (NSG), Virtual Network(VNet), Public IP, Network Interface Card (NIC) assigned to the Virtual Machine (VM)
-<img src="Window sign up and resources.png"/>
+
 
 <h3>Part 2: Microsoft Defender for Cloud’s Just-In-Time (JIT) VM Access</h3>
 
