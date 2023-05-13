@@ -23,6 +23,7 @@ This document demonstrates through images and brief descriptions, steps undertak
 
 
 <h2>Lab Topology</h2>
+<img src="Snapshots/Topology.PNG"/>
 
 <h2>Walkthrough</h2>
 
@@ -33,34 +34,35 @@ This document demonstrates through images and brief descriptions, steps undertak
  - Created and deployed Resource Group (RG-AZ-CD-P1), Virtual Machine Windows 10 Pro (VM-AZ-CD-P1) - Allowed all inbound Remote Desktop Protocol (RDP) connection
  - Noticed default deployment of Network Security Group (NSG), Virtual Network(VNet), Public IP, Network Interface Card (NIC) assigned to the Virtual Machine (VM)
 
-
+<img src="Snapshots/Window sign up and resources.png" height="80%" width="80%" alt="Disk Sanitization Steps" />
 <h3>Part 2: Microsoft Defender for Cloud’s Just-In-Time (JIT) VM Access</h3>
 
  - In the VM > Network tab, besides the default inbound rules, the allowed RDP (default port 3389) inbound connection during VM configuration is dangerous as it is susceptible to brute-force or password spray attack
  - Thus, I locked down the RDP connection via JIT Access in Microsoft Defender for Cloud by enabling the enhanced security plan
  - Microsoft Defender for Cloud > Environment Settings > Enable All > Save
 
+<img src="Snapshots/JIT not conf on VM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
  - Next, selected VM > Connect > Enable JIT Access, to enable JIT Access to the VM and block any inbound RDP traffic to it
  - Resulting in VM > Networking > JIT Priority (Any-VM = Deny)
  - To connect to the VM from only my PC, I requested access via VM > Connect > MyIP (auto-detected) > Request Access
  
+<img src="Snapshots/JIT conf on VM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="Snapshots/JIT enabled with MY IP option.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
  - Resulting in approved access, VM > Networking > JIT Priority (MyIP-VM = Allow)
  - The access was granted as I am the default Global Admin for the Azure account
  
-
  
  <h3>Part 3: Log Analytics Workspace (LAW) and Microsoft Sentinel</h3>
  
  - Created LAW (LAW-AZ-CD-P1) to record all logs coming from the VM
  - Created Microsoft Sentinel and connect to LAW for real-time monitoring and analytics of security events
 
-
-
  - Microsoft Sentinel > Data Connectors > Windows Events via AMA > Data collection rule > RG-AZ-CD-P1 > All Security Events > Collect = Status Connected
  - The Data Connector helped collect all security events from the VM to stream it on Microsoft Sentinel
  
+ <img src="Snapshots/Win data connector in sen.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
  <h3>Part 4: RDP and Event Viewer</h3>
  
@@ -70,7 +72,6 @@ This document demonstrates through images and brief descriptions, steps undertak
  - PC > Remote Desktop Connection > Paste VM Public IP > Connect > Azure Admin Credentials > Yes > Connected
  - VM home page > Event Viewer > Windows Logs > Security > Event ID
  
-
  
  <h3>Part 5: Microsoft Sentinel’s in-built analytical rule template</h3>
  
