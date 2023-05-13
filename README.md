@@ -167,8 +167,11 @@ This document demonstrates through images and brief descriptions, steps undertak
 
 <h2>References</h2>
 
- - Project Idea Credit & Inspiration: Charles Quansah
- - Microsoft Azure
+ - Incident Response process from identification to remediation.
+ - Just-in-Time (JIT) Access to secure VM management ports
+ - Microsoft Sentinel Incident Response 
+ - Local Security Policy
+ - Schedule Task/Job to trigger malicious applications
  - MITRE ATT&CK® Matrix for Enterprise
  
  <h1>-THE END-</h1>
