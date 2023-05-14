@@ -196,7 +196,7 @@ This document demonstrates through images and brief descriptions, steps undertak
  - Log Analytics Workspace (LAW)
  - Azure Sentinel IR
  - Just-in-Time (JIT) Access to secure VM management ports
- - Budget Monitoring
+ - Budget Monitoring and Cost analysis
  - Local Security Policy
  - Schedule Task/Job to trigger malicious applications
  - MITRE ATT&CK® Matrix for Enterprise
