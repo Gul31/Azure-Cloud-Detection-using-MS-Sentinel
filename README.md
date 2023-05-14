@@ -167,9 +167,10 @@ This document demonstrates through images and brief descriptions, steps undertak
 
 <h2>References</h2>
 
- - Incident Response process from identification to remediation.
+ - Incident Response process from identification to remediation
+ - Log Analytics Workspace (LAW)
+ - Azure Sentinel 
  - Just-in-Time (JIT) Access to secure VM management ports
- - Microsoft Sentinel Incident Response 
  - Local Security Policy
  - Schedule Task/Job to trigger malicious applications
  - MITRE ATT&CK® Matrix for Enterprise
