@@ -35,11 +35,13 @@ This document demonstrates through images and brief descriptions, steps undertak
  - Created and deployed Resource Group (RG-AZ-CD-P1), Virtual Machine Windows 10 Pro (VM-AZ-CD-P1) - Allowed all inbound Remote Desktop Protocol (RDP) connection
  - Noticed default deployment of Network Security Group (NSG), Virtual Network(VNet), Public IP, Network Interface Card (NIC) assigned to the Virtual Machine (VM)
 
+
 <img src="Snapshots/Window sign up and resources.png" height="80%" width="80%" alt="Disk Sanitization Steps" />
 
 <h3>Part 2: Budget monitoring with Cost analysis</h3>
 - Go to your subscription (Sub-AZ-CD-P1) and select "Budgets" from the left panel. 
 - Click "+" to create a new budget for your subscription.
+
 
 <img src="Snapshots/Suncription page.PNG" height="80%" width="80%" alt="Disk Sanitization Steps" />
 
@@ -54,7 +56,9 @@ This document demonstrates through images and brief descriptions, steps undertak
 - Go to your subscription (Sub-AZ-CD-P1) and select "Cost analysis" from the left panel.
 - You can check amount spend on each resource within your subscription. View the image below for your reference.
 
+
 <img src="Snapshots/cost analysis.PNG" height="80%" width="80%" alt="Disk Sanitization Steps" />
+
 
 <h3>Part 3: Microsoft Defender for Cloud’s Just-In-Time (JIT) VM Access</h3>
 
