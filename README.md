@@ -151,7 +151,7 @@ This document demonstrates through images and brief descriptions, steps undertak
  - With MITRE ATT&CK framework, I mapped the tactic to be Persistence and technique to be T1053-Scheduled Task/Job
 
 <img src="Snapshots/Mitre Attack Schedule Task.webp" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="Snapshots/P7 3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="Snapshots/P2 3.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
  - Microsoft Sentinel > Configure Analytics > Custom Rule Template > Sen-analytics-custom-rule-AZ-CD-P1 > Create Rule
  - The Entity Mapping options were selected based on the essential information that will be helpful to jumpstart the investigation process. Also, the query schedule was set to run every 5 minutes
